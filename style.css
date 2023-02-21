@@ -1,9 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    /*background-color: darkblue;*/
-}
+    background: rgb(244, 249, 253);
+} 
 
-.main-section{
-    border: 1px solid #333;
+.main-section {
+    border-radius: 3px;
+    background-color: #fff;
+    text-align: center;
+    margin: 8% auto 0;
+    width: 60%;
+    padding: 29px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
+}
+.main-section h2 {
+    text-transform: uppercase;
+    color: #040614;
+    font-weight: 700 ;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.form-side {
+    width: 50%;
+    margin-top: 2%;
+}
+.form-side form#form-search {
+    display: flex;
+    flex-direction: column;
+}
+.image-side {
+    background-image: url(bg.jpg);
+    margin: 0 auto;
+    height: 400px;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    
+}
+.form-side #form-search select {
+    font-size: inherit;
+    margin: 8px 0px 7px;
+    background-color: white;
+    padding: 8px 5px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 7px;
+    color: #736d6d;
+    --white: linear-gradient(white,white);
+    --gradient: linear-gradient(to left, #3193cc, #040614);
+    border: solid 0.2rem transparent;
+    border-radius: 0.5rem;
+    background: var(--white) padding-box, var(--gradient) border-box;
+}
+input[type="submit"] {
+    margin: 12px auto 0px;
+    width: 50%;
+    color: cadetblue;
+    background-color: #040614;
+    border: solid 0px #ada2a2;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 8px 2px;
+    color: #FFF;
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+input[type="submit"]:hover {
+    color: #040614;
+    background-color: #fff;
+  
+    cursor: pointer;
+    --white: linear-gradient(white,white);
+    --gradient: linear-gradient(to left, #3193cc, #040614);
+    border: solid 0.2rem transparent;
+    border-radius: 0.5rem;
+    background: var(--white) padding-box, var(--gradient) border-box;
+}
+.error {
+    color: red;
+}
+.display-info p span{
+    font-weight: 700;
+}
+.display-info .main-price{
+    font-size: 28px;
+    margin-bottom: 2px;
 }
