@@ -109,6 +109,17 @@ input[type="submit"]:hover {
       height: 400px;
     }
   }
+
+  .grupo-2{
+    background-color: #040614;
+    padding: 0.5rem 0.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+.grupo-2 small{
+    font-size: 0.7rem;
+}
   
   /* Estilos para pantallas medianas */
   @media only screen and (max-width: 1023px) and (min-width: 768px) {
